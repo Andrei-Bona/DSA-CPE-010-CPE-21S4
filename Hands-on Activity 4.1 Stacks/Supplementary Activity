@@ -1,0 +1,35 @@
+ILO C: Solve problems using an implementation of stack:
+The following problem definition and algorithm is provided for checking balancing of symbols. Create an
+implementation using stacks. Your output must include the following:
+a. Stack using Arrays
+b. Stack using Linked Lists
+c. (Optional) Stack using C++ STL
+
+Problem Definition:
+Stacks can be used to check whether the given expression has balanced symbols. This algorithm is very useful
+in compilers. Each time the parser reads one character at a time. If the character is an opening delimiter such
+as (, {, or [- then it is written to the stack. When a closing delimiter is encountered like ), }, or ]-the stack is
+popped. The opening and closing delimiters are then compared. If they match, the parsing of the string
+continues. If they do not match, the parser indicates that there is an error on the line.
+
+Steps:
+1. Create a Stack.
+2. While(end of input is not reached) {
+  a) If the character read is not a symbol to be balanced, ignore it.
+  b) If the character is an opening symbol, push it onto the stack.
+  c) If it is a closing symbol:
+    i) Report an error if the stack is empty.
+    ii) Otherwise, pop the stack.
+  d) If the symbol popped is not the corresponding opening symbol, report an error.
+3. At the end of input, if the stack is not empty: report an error.
+
+Self-Checking:
+For the following cases, complete the table using the code you created.
+Expression Valid? (Y/N) Output (Console Screenshot) Analysis
+(A+B)+(C-D)
+((A+B)+(C-D)
+((A+B)+[C-D])
+((A+B]+[C-D]}
+
+Tools Analysis:
+• How do the different internal representations affect the implementation and usage of the stack?
