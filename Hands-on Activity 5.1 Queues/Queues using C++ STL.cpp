@@ -3,7 +3,7 @@
 #include <queue>
 using namespace std;
 
-string array[] = {"Vincent", "Frederick","Andrei", "Anna"}; 
+string array[] = {"Vincent", "Frederick", "Andrei", "Anna"}; 
 int i = 0;
 
 void display(queue <string> students)
