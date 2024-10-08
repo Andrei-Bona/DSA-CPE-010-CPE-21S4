@@ -113,30 +113,19 @@ public:
 int main()
 {
     Printer printer(5);  
-
-
-   
     printer.addJob(1, "Vincent", 10);
     printer.addJob(2, "Frederick", 20);
     printer.addJob(3, "Andrei", 30);
     printer.addJob(4, "Anna", 40);
     printer.addJob(5, "Bona", 50);
 
-
-
-
     printer.addJob(6, "John", 60);
-
-
-
 
     printer.processJob();
     printer.processJob();  
     printer.addJob(6, "Doe", 10);
 
-
     printer.processAllJobs();
-
 
     return 0;
 }
