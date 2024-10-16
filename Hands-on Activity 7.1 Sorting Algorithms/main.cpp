@@ -1,4 +1,3 @@
-// Insertion Sort Algorithm
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
