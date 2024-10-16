@@ -32,7 +32,8 @@ int main()
 //    selectionSort(arr, arrSize);
     insertionSort(arr, arrSize);
     cout << "Sorted array: " << endl;
-    for (size_t i = 0; i < arrSize; i++) {
+    for (size_t i = 0; i < arrSize; i++) 
+    {
         cout << arr[i] << " ";
     }
     cout << endl;
