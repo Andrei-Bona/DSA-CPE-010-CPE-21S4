@@ -31,7 +31,7 @@ int main()
     cout << endl;
 
     // Sort the votes
-    selectionSort(votes, arrSize);
+    insertionSort(votes, arrSize);
 
     // Count the votes
     for (int i = 0; i < arrSize; i++) {
